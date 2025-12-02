@@ -124,8 +124,8 @@ function App() {
       {weather ? (
         <div className="weather-card">
           <p className="weather-info">📍 <span className="fb">도시</span> {searchCity}</p>
-          <p className="weather-info">🌡️ 온도: {weather.main.temp}°C</p>
-          <p className="weather-info">🌥️ 상태: {weather.weather[0].description}</p>
+          <p className="weather-info">🌡️ <span className="fb">온도</span> {weather.main.temp}°C</p>
+          <p className="weather-info">🌥️ <span className="fb">상태</span> {weather.weather[0].description}</p>
         </div>
       ) : (
         <p className="loading-message">날씨 정보를 불러오는 중...</p>
